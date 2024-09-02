@@ -13,21 +13,28 @@ public class Main {
 
         System.out.println();
         System.out.println("Exercise 2.");
-        int targetNum = -10;
-        double p = -9;
-        double d = -5;
-        if (targetNum > p && targetNum > d && p > d) {
-            System.out.println(p);
+        int targetNum = 47;
+        double p = 91;
+        double d = 5;
+        if (targetNum >= p && targetNum >= d && p > d) {
+            System.out.println(p + " Ответ 1");
         } else if (targetNum > p && targetNum > d && p < d) {
-            System.out.println(d);
-        } else if (targetNum < p && targetNum < d && p > d) {
-            System.out.println(d);
-        } else if (targetNum > p && targetNum > d && p < d) {
-            System.out.println(p);
+            System.out.println(d + " Ответ 2");
         }
-
-        System.out.println();
-        System.out.println("Exercise 3.");
-
+        if (targetNum < p && targetNum < d && p < d) {
+            System.out.println(p + " ответ 3");
+        } else if (targetNum < p && targetNum < d && p > d) {
+            System.out.println(d + " Ответ 4");
+        }
+        if        (targetNum > p && targetNum < d && d - targetNum > targetNum - p) {
+            System.out.println(p + " Ответ 5");
+        } else if (targetNum > p && targetNum < d && d - targetNum < targetNum - p) {
+            System.out.println(d + " Ответ 6");
+        }
+        if        (targetNum < p && targetNum > d && p - targetNum > targetNum - d) {
+            System.out.println(d + " Ответ 7");
+        } else if (targetNum < p && targetNum > d && p - targetNum < targetNum - d) {
+            System.out.println(p + " Ответ 8");
+        }
     }
 }
