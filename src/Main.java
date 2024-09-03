@@ -84,7 +84,7 @@ public class Main {
         }
 
 
-        // копипаста из задачника
+        // копипаста из задачника.
         System.out.println();
         System.out.println("Exercise 6.");
         int currentTime = ThreadLocalRandom.current().nextInt(28001);
